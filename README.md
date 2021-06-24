@@ -1,8 +1,14 @@
 # Assembler
 
-Compiles jack programming language source code into vm code.
+The assembler translates assembly into (pseudo) binary code (.hack) for the hack platform.
 
-The compiler is the first step into a two stage translation process:
+```
+    .asm   == assembly ==>   .hack
+```
+
+
+The assembler is the last tool in the toolchain which involves two stage compilation of
+jack high level programmming language into hack assembly.
 - stage one: jack high level programs (.jack) are compiled into vm code (.vm)
 - stage two: vm-translator translates vm code into hack assembly language (.asm).
 
@@ -12,11 +18,6 @@ VM code is a simple stack based programming language
     .jack   == compilation ==>   .vm   == translation ==>   .asm 
 ```
 
-Finally, an assembler translates assembly into (pseudo) binary code (.hack) for the hack platform.
-
-```
-    .asm   == assembly ==>   .hack
-```
 
 From https://www.nand2tetris.org/
 
